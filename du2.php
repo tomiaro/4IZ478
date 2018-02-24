@@ -19,7 +19,7 @@ if (!empty($_POST)) {
     }
     
     if ($err == false) {
-    	foreach ($_POST as $varPost) {
+    	foreach ($_POST as &$varPost) {
     		$varPost = checkString($varPost);
     	}
     }
